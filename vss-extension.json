@@ -1,0 +1,48 @@
+{
+    "manifestVersion": 1,
+    "id": "work-roadmap",
+    "publisher": "ms-devlabs",
+    "version": "1.0.0",
+    "name": "Roadmap",
+    "scopes": [ "vso.work" ],
+    "description": "Track your epics cross team cross sprint with dependency",
+    "public": false,
+    "icons": {
+        "default": "dist/images/logo.png"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "tags": [
+        "roadmap"
+    ],
+    "content": {
+        "details": {
+            "path": "dist/details.md"
+        }
+    },
+    "categories": [
+        "Plan and track"
+    ],
+    "contributions": [
+        {
+            "id": "work-roadmap-hub",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-work-web.work-hub-group"
+            ],
+            "properties": {
+                "name": "Roadmap",
+                "uri": "dist/app.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "dist",
+            "addressable": true
+        }
+    ]
+}

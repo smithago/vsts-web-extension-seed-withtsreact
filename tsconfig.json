@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "sourceMap": true,
+        "noUnusedLocals": true,
+        "jsx": "react",
+        "moduleResolution": "node",
+        "target": "es5",
+        "rootDir": "src/",
+        "outDir": "dist/",
+        "types": [
+            "react",
+            "react-dom",
+            "vss-web-extension-sdk"
+        ],
+        "typeRoots": [
+            "../node_modules/@types"
+        ]
+    },
+
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]	
+    
+}

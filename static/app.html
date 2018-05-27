@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="libs/VSS.SDK.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+    VSS.init({
+        usePlatformScripts: true, 
+        usePlatformStyles: true,
+        moduleLoaderConfig: {
+            paths: {
+                "react": "dist/react",
+                "react-dom": "dist/react-dom",
+                "App": "dist/bundle"
+            }
+        }
+    });
+
+    VSS.ready(function() {
+        VSS.require(["App"], function(app) {
+            app.initialize();
+            VSS.notifyLoadSucceeded();
+        });
+    });
+
+    </script>
+    <div id="root" />
+</body>
+</html>
