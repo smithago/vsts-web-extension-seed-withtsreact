@@ -13,6 +13,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install -g webpack webpack-cli --save-dev
-    npm run build
-  displayName: 'npm install, run build'
+    npm install
+    webpack
+    npm run package
+  displayName: 'npm install, run pack'
